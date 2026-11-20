@@ -1,0 +1,13 @@
+<section class="card" style="max-width: 320px">
+  <img [src]="urlImg" class="card-img-top" [alt]="textAltImg">
+  <div class="card-body">
+    <h4 class="card-title">{{titreCarte}}
+    </h4>
+    <p>{{prix}} $</p>
+    <p class="card-text">{{description}}</p>
+    <button type="button" class="theme-primary btn-solid btn-styled" (click)="onLike()">Like</button>
+    <p>Nombre totale de likes : {{like}}</p>
+    <input type="text" placeholder="Ajouter un commentaire" [(ngModel)]="comment">
+    <p>Commentaires : {{comment}}</p>
+  </div>
+</section>
