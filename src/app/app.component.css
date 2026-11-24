@@ -15,21 +15,7 @@ main{
     text-decoration: none;
 }
 
-.alertNsg{
-    text-align: center;
-    padding-top: 20px;
-    color: green;
-    font-size: 1.2rem;
-}
 
-.card{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
-    align-items: center;
-    margin: auto;
-    border: none;
-}
 .container {
     max-width: 100%;
 }

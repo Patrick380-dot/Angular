@@ -1,13 +1,37 @@
 <section class="card" style="max-width: 320px">
-  <img [src]="urlImg" class="card-img-top" [alt]="textAltImg">
+  <img [src]="urlImg" class="card-img-top" [alt]="textAltImg" />
   <div class="card-body">
-    <h4 class="card-title">{{titreCarte}}
+    <h4 class="card-title" [ngStyle]="{ color: getColor() }">
+      {{ titreCarte }}
     </h4>
-    <p>{{prix}} $</p>
-    <p class="card-text">{{description}}</p>
-    <button type="button" class="theme-primary btn-solid btn-styled" (click)="onLike()">Like</button>
-    <p>Nombre totale de likes : {{like}}</p>
-    <input type="text" placeholder="Ajouter un commentaire" [(ngModel)]="comment">
-    <p>Commentaires : {{comment}}</p>
+    <p>{{ prix }} $</p>
+    <p class="card-text">{{ description }}</p>
+
+    <a routerLink="/detail/{{ idArticle }}" >Voir détails</a>
+
+    <button (click)="onLike()"
+      [ngClass]="{
+        'show' : jaime === true,
+        'hiden' : jaime === false
+      }"
+    >j'aime
+    </button>
+
+    <button class="noLike" (click)="onLike()"
+      [ngClass]="{
+        'show' : jaime === false,
+        'hiden' : jaime === true
+      }"
+      >j'aime pas
+    </button>
+
+
+    <p>Nombre totale de likes : {{ like }}</p>
+    <input
+      type="text"
+      placeholder="Ajouter un commentaire"
+      [(ngModel)]="comment"
+    />
+    <p>Commentaires : {{ comment }}</p>
   </div>
 </section>

@@ -1,0 +1,19 @@
+  <div class="alertNsg">
+    <p>
+      {{message}}
+    </p>
+  </div>
+
+  <div class="card">
+
+    <app-articles
+      *ngFor = "let element of liste"
+      [titreCarte]="element.titreCarte"
+      [prix]="element.prix"
+      [description]="element.description"
+      [urlImg]="element.urlImg"
+      [textAltImg]="element.textAltImg"
+      [dispo]="element.dispo"
+      (info)="onAffiche($event)"
+    ></app-articles>
+  </div>

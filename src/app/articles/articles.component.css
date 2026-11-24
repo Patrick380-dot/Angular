@@ -9,3 +9,16 @@
     padding: 5px 8px;
     border-radius: 5px;
 }
+
+.noLike{
+    background-color: blue;
+    color: white;
+}
+
+.show{
+    display: inline-block;
+}
+
+.hiden{
+    display: none;
+}

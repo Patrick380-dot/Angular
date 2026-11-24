@@ -40,25 +40,8 @@
     </div>
   </nav>
 
-  <div class="alertNsg">
-    <p>
-      {{message}}
-    </p>
-  </div>
+  <router-outlet></router-outlet>
 
-  <div class="card">
-
-    <app-articles
-      *ngFor = "let element of liste"
-      [titreCarte]="element.titreCarte"
-      [prix]="element.prix"
-      [description]="element.description"
-      [urlImg]="element.urlImg"
-      [textAltImg]="element.textAltImg"
-      [dispo]="element.dispo"
-      (info)="onAffiche($event)"
-    ></app-articles>
-  </div>
 
   <footer>
     <div class="container">
