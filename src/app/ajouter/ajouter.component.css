@@ -1,0 +1,121 @@
+.add-page {
+  display: grid;
+  min-height: 70vh;
+  place-items: center;
+  padding: 3rem 1.25rem;
+  background:
+    radial-gradient(ellipse at 50% 0, rgb(41 116 96 / 12%), transparent 58%),
+    #f6f8f7;
+}
+
+.add-card {
+  width: min(100%, 34rem);
+  padding: clamp(1.75rem, 6vw, 3rem);
+  border: 1px solid #e1e9e5;
+  border-radius: 1.25rem;
+  background: #fff;
+  box-shadow: 0 1.5rem 4rem rgb(28 57 45 / 8%);
+}
+
+.add-eyebrow {
+  margin: 0 0 0.5rem;
+  color: #26745c;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.add-card h1 {
+  margin: 0;
+  color: #1d3129;
+  font-size: clamp(1.8rem, 5vw, 2.25rem);
+}
+
+.add-description {
+  margin: 0.75rem 0 2rem;
+  color: #5d6d65;
+  line-height: 1.6;
+}
+
+.add-form {
+  display: grid;
+  gap: 1.4rem;
+}
+
+.form-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.form-field label {
+  color: #263a31;
+  font-size: 0.95rem;
+  font-weight: 650;
+}
+
+.form-field input {
+  width: 100%;
+  min-height: 3rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid #cbd8d1;
+  border-radius: 0.6rem;
+  background: #fff;
+  color: #1d3129;
+  font: inherit;
+}
+
+.form-field input::placeholder {
+  color: #89978f;
+}
+
+.form-field input:focus-visible {
+  border-color: #26745c;
+  outline: 3px solid rgb(38 116 92 / 18%);
+}
+
+.price-input {
+  position: relative;
+}
+
+.price-input input {
+  padding-right: 2.5rem;
+}
+
+.price-input span {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  color: #5d6d65;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.add-button {
+  min-height: 3rem;
+  margin-top: 0.25rem;
+  padding: 0.75rem 1rem;
+  border: 0;
+  border-radius: 0.6rem;
+  background: #26745c;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  transition: background-color 160ms ease;
+}
+
+.add-button:hover {
+  background: #1c5d49;
+}
+
+.add-button:focus-visible {
+  outline: 3px solid #8cc9ad;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .add-button {
+    transition: none;
+  }
+}

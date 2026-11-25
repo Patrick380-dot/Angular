@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
 })
 export class ArticlesComponent {
   like : number = 0;
-  comment : string = "Commentaire de l'article";
+  comment : string = "";
 
   @Input() idArticle : number
   @Input() titreCarte : string

@@ -8,6 +8,7 @@
 
     <app-articles
       *ngFor = "let element of liste"
+      [idArticle]="element.id"
       [titreCarte]="element.titreCarte"
       [prix]="element.prix"
       [description]="element.description"
