@@ -54,6 +54,12 @@
   font-weight: 650;
 }
 
+.field-errors {
+  color: #b42318;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
 .form-field input {
   width: 100%;
   min-height: 3rem;
@@ -63,6 +69,10 @@
   background: #fff;
   color: #1d3129;
   font: inherit;
+}
+
+.form-field input.ng-invalid.ng-touched {
+  border-color: #b42318;
 }
 
 .form-field input::placeholder {
